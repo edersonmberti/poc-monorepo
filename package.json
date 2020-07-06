@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Ederson Machado <edersonmberti@gmail.com> (https://www.linkedin.com/in/ederson-machado-b973a0125/)",
+  "license": "MIT",
+  "dependencies": {
+    "react-native": "*"
+  },
+  "scripts": {
+    "clean-first": "cd packages/first && rm -rf node_modules",
+    "clean-second": "cd packages/second && rm -rf node_modules",
+    "clean-root": "rm -rf node_modules",
+    "clean-all": "yarn clean-root && yarn clean-first && yarn clean-second && yarn",
+    "first-android": "cd packages/first && yarn android",
+    "second-android": "cd packages/second && yarn android"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

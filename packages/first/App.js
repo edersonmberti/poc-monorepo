@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { ButtonRed, ButtonBlue, ButtonPurple } from 'shared';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
@@ -15,6 +16,9 @@ function HomeScreen({ navigation }) {
         color="#841584"
       />
       <Icon name="comments" size={30} color="#900" />
+      <ButtonBlue title="BLUE" />
+      <ButtonPurple title="PURPLE" />
+      <ButtonRed title="RED" />
     </View>
   );
 }
@@ -29,6 +33,9 @@ function ProfileScreen({ navigation }) {
         color="#841584"
       />
       <Icon name="comments" size={30} color="#900" />
+      <ButtonBlue title="BLUE" />
+      <ButtonPurple title="PURPLE" />
+      <ButtonRed title="RED" />
     </View>
   );
 }

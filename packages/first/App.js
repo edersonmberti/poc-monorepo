@@ -3,6 +3,8 @@ import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import Icon from 'react-native-vector-icons/FontAwesome5';
+
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -12,6 +14,7 @@ function HomeScreen({ navigation }) {
         title="GO TO PROFILE"
         color="#841584"
       />
+      <Icon name="comments" size={30} color="#900" />
     </View>
   );
 }
@@ -25,6 +28,7 @@ function ProfileScreen({ navigation }) {
         title="GO TO HOME"
         color="#841584"
       />
+      <Icon name="comments" size={30} color="#900" />
     </View>
   );
 }
